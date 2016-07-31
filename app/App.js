@@ -5,6 +5,8 @@ import {
   View,
 } from 'react-native';
 
+import TestComponent from './components/TestComponent.js';
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -27,6 +29,11 @@ const styles = StyleSheet.create({
 export default function App() {
   return (
     <View style={styles.container}>
+      <TestComponent style={{ backgroundColor: '#ccc' }}>
+        <Text style={styles.welcome}>
+          My first component
+        </Text>
+      </TestComponent>
       <Text style={styles.welcome}>
         Welcome to React Native!!
       </Text>
